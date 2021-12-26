@@ -20,7 +20,7 @@ app.get('/isAdmin', (req, res) => {
     res.json({'admin': administrator})
 });
 
-app.get('//', (req, res) =>{
+app.get('/', (req, res) =>{
     res.status(404).send({'error': -2,'descripcion':`Ruta${req.originalUrl} con metodo ${req.method} no implementada.`})
 });
 
